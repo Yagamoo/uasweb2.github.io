@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <title>Admin Pemasaran</title>
+
+  </head>
+  <body class="font-poppins">
+    <div class="flex h-screen bg-gradient-to-b from-purple-600 to-slate-900">
+      <div class="bg-slate-50/10 w-96 h-96 m-auto p-10 rounded-xl shadow-2xl">
+        <h1 class="text-white text-xl font-bold border-b-2 w-24">Sign In</h1>
+        <form action="" class="mt-10 flex flex-col gap-4 border-b-2 active:border">
+          <input
+            type="text"
+            placeholder="Username"
+            class="p-2 rounded-md outline-none bg-transparent text-white"
+          />
+        </form>
+        <form action="" class="mt-4 flex flex-col gap-4 border-b-2">
+          <input
+            type="password"
+            placeholder="Password"
+            class="p-2 rounded-md outline-none bg-transparent text-white"
+          />
+        </form>
+        <a href="dashboard.html" class="inline-block mt-6 bg-purple-500 px-5 py-2 rounded-lg text-white hover:bg-purple-600 hover:transition">Sign In</a>
+      </div>
+    </div>
+  </body>
+</html>
